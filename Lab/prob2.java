@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
-class Prob2 {
+class Prob2 
+{
 
-  public static void main(String[] args) {
+  public static void main(String[] args) 
+  {
 
     Data d = new Data();
     d.getRes();
@@ -11,11 +13,14 @@ class Prob2 {
 
 }
 
-class Data {
+class Data 
+{
   private String str;
 
-  public Data() {
-    try (Scanner sc = new Scanner(System.in)) {
+  public Data() 
+  {
+    try (Scanner sc = new Scanner(System.in)) 
+    {
       System.out.print("Enter a string: ");
       str = sc.nextLine();
     } catch (Exception e) {
@@ -23,26 +28,34 @@ class Data {
     }
   }
 
-  public boolean checkPalin() {
+  public boolean checkPalin() 
+  {
     String rev = "";
 
-    for (int i = (str.length() - 1); i >= 0; i--) {
+    for (int i = (str.length() - 1); i >= 0; i--) 
+    {
       char ext = str.charAt(i);
       rev = rev + ext;
     }
 
-    if (rev.equalsIgnoreCase(str)) {
+    if (rev.equalsIgnoreCase(str)) 
+    {
       return true;
-    } else {
+    } else
+    {
       return false;
     }
   }
 
-  public void getRes() {
+  public void getRes() 
+  {
 
-    if (checkPalin()) {
+    if (checkPalin()) 
+    {
       System.out.println("Entered String is palindrome!!");
-    } else {
+    } 
+    else 
+    {
       System.out.println("Entered String is not palindrome");
     }
 
