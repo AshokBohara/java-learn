@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
-class Prob1 {
+class Prob1 
+{
 
-  public static void main(String[] args) {
+  public static void main(String[] args) 
+  {
 
     Triangle t = new Triangle();
     t.getArea();
@@ -11,24 +13,29 @@ class Prob1 {
 
 }
 
-class Triangle {
+class Triangle 
+{
   private double a, b, c;
 
-  public Triangle() {
+  public Triangle() 
+  {
 
-    try (Scanner sc = new Scanner(System.in)) {
+    try (Scanner sc = new Scanner(System.in)) 
+    {
 
       System.out.print("Enter sides of triangle: ");
       a = sc.nextDouble();
       b = sc.nextDouble();
       c = sc.nextDouble();
 
-    } catch (Exception e) {
+    } catch (Exception e) 
+    {
       System.out.println("Error: " + e.getMessage());
     }
   }
 
-  public void getArea() {
+  public void getArea() 
+  {
 
     double s, area;
     s = (a + b + c) / 2;
