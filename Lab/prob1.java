@@ -1,3 +1,4 @@
+//first lab class in java 
 import java.util.Scanner;
 
 class Prob1 
