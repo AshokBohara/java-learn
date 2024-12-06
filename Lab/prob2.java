@@ -1,3 +1,4 @@
+//2nd Qn of lab-1 of java.
 import java.util.Scanner;
 
 class Prob2 
