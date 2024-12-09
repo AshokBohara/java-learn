@@ -1,9 +1,11 @@
-
+//lab 1st QnNo.4 in java 
 import java.util.Scanner;
 
-class Prob4 {
+class Prob4 
+{
 
-  public static void main(String[] args) {
+  public static void main(String[] args) 
+  {
 
     FourData s = new FourData();
     s.convCase();
@@ -12,12 +14,15 @@ class Prob4 {
 
 }
 
-class FourData {
+class FourData 
+{
   private String str;
 
-  public FourData() {
+  public FourData() 
+  {
 
-    try (Scanner sc = new Scanner(System.in)) {
+    try (Scanner sc = new Scanner(System.in)) 
+    {
       System.out.print("Enter a string: ");
       str = sc.nextLine();
     } catch (Exception e) {
@@ -25,13 +30,18 @@ class FourData {
     }
   }
 
-  public void convCase() {
+  public void convCase() 
+  {
     String converted = "";
-    for (int i = 0; i < str.length(); i++) {
+    for (int i = 0; i < str.length(); i++) 
+    {
       char ext = str.charAt(i);
-      if (i % 2 == 0) {
+      if (i % 2 == 0) 
+      {
         converted = converted + Character.toUpperCase(ext);
-      } else {
+      }
+      else 
+      {
         converted = converted + Character.toLowerCase(ext);
       }
     }
