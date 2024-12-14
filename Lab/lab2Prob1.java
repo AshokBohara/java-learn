@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class QuadraticEquation {
+public class QuadraticEquation 
+{
 
     
     public static void findRoots(double a, double b, double c) {
