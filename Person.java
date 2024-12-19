@@ -1,4 +1,4 @@
-// example of class in java 
+// example of class and object in java 
 public class Person 
 {
     // Fields
