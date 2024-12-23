@@ -1,4 +1,3 @@
-//lab 2 problem no.1 solution in java.
 import java.util.Scanner;
 
 public class QuadraticEquation 
@@ -18,16 +17,12 @@ public class QuadraticEquation
             System.out.println("The equation has two distinct real roots:");
             System.out.println("Root 1: " + root1);
             System.out.println("Root 2: " + root2);
-        } 
-        else if (discriminant == 0) 
-        {
+        } else if (discriminant == 0) {
             
             double root = -b / (2 * a);
             System.out.println("The equation has one real root:");
             System.out.println("Root: " + root);
-        }
-        else
-        {
+        } else {
         
             System.out.println("The equation has no real roots.");
         }
@@ -47,8 +42,7 @@ public class QuadraticEquation
         if (a == 0)
          {
             System.out.println("Invalid input. Coefficient 'a' cannot be zero for a quadratic equation.");
-        }
-        else 
+        } else 
         {
         
             findRoots(a, b, c);
