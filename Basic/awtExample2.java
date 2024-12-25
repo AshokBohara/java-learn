@@ -1,13 +1,15 @@
 //without event handling there is creation of button but it does not preforms any action .
 import java.awt.*;
 
-class MyFrame extends Frame {
+class MyFrame extends Frame 
+{
     Label lbl_fn, lbl_sn, lbl_res;       // Labels
     TextField txt_fn, txt_sn, txt_res;  // TextFields
     Button btn_add;                     // Button
     FlowLayout layout_flow;             // Layout
 
-    public MyFrame() {
+    public MyFrame()
+    {
         // Initialize components
         lbl_fn = new Label("First Num:");
         lbl_sn = new Label("Second Num:");
@@ -38,8 +40,10 @@ class MyFrame extends Frame {
     }
 }
 
-public class awtExample2 {
-    public static void main(String[] args) {
+public class awtExample2
+    {
+    public static void main(String[] args) 
+        {
         new MyFrame(); // Create and display the frame
     }
 }
