@@ -1,8 +1,10 @@
+
 import java.util.*;
 
 class demo1 
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Result r = new Result(); 
         r.setDetail();
         r.displayDetail(); 
@@ -40,7 +42,8 @@ class Result
         } else if (pct >= 60)
          { 
             div = "First Division";
-        } else
+        } 
+        else
          {
             div = "Second Division";
         }
