@@ -1,4 +1,4 @@
-
+//displaying the result of three subject in java..
 import java.util.*;
 
 class demo1 
