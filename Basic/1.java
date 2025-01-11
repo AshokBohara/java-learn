@@ -1,3 +1,4 @@
+//function of interface and implement..
 // Define an interface
 interface MyInterface
  {
