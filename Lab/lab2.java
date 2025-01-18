@@ -3,9 +3,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class lab2 
+public class lab2
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class lab2
         System.out.print("Enter the number of elements: ");
         int n = scanner.nextInt();
         System.out.println("Enter " + n + " numbers:");
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < n; i++)
         {
             numbers.add(scanner.nextInt());
         }
@@ -23,7 +23,7 @@ public class lab2
         Collections.sort(numbers);
 
         System.out.println("Numbers in ascending order:");
-        for (int num : numbers) 
+        for (int num : numbers)
         {
             System.out.print(num + " ");
         }
