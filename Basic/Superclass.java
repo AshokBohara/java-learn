@@ -6,7 +6,8 @@ class Superclass
     }
 }
 
-class Students extends Superclass {
+class Students extends Superclass
+ {
     void message()
      {
         System.out.println("Welcome to Java");
