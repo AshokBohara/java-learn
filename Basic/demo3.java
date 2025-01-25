@@ -1,3 +1,4 @@
+//creating frame in java ..
 import java.awt.*;
 
 public class demo3 extends Frame
