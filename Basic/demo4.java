@@ -1,4 +1,5 @@
-class parent{
+class parent
+{
     public parent()
     {
         System.out.println(" HELLO WORLD with Using Super Class");
