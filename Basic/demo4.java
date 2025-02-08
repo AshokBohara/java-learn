@@ -1,7 +1,9 @@
-class parent{
+//super keyword can also be used to acess the parent constructor.
+class parent
+{
     public parent()
     {
-        System.out.println(" HELLO WORLD with Using Super Class");
+        System.out.println(" HELLO WORLD with Using Super keyword");
     }
 }
 class child extends parent
