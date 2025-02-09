@@ -1,3 +1,4 @@
+//Qn paper Ans..3a spring-2024
 import java.util.Scanner;
 
 // Base class
