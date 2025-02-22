@@ -1,0 +1,49 @@
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
+import javafx.event.EventHandler;
+import javafx.event.ActionEvent;
+
+public class Qno3a extends Application {
+  public void start(Stage primarystage) {
+
+    GridPane gp = new GridPane();
+
+    TextField txt_fn = new TextField();
+    TextField txt_sn = new TextField();
+    Label lbl_res = new Label("Result");
+    Button btn_sum = new Button("Sum");
+
+    gp.add(txt_fn, 0, 0, 1, 1);
+    gp.add(txt_sn, 0, 1, 1, 1);
+    gp.add(lbl_res, 0, 2, 1, 1);
+    gp.add(btn_sum, 0, 3, 1, 1);
+
+    EventHandler<ActionEvent> sum = new EventHandler<ActionEvent>() {
+      public void handle(ActionEvent e) {
+        double fn = Double.parseDouble(txt_fn.getText());
+        double sn = Double.parseDouble(txt_sn.getText());
+
+        double res = fn + sn;
+
+        lbl_res.setText(Double.toString(res));
+      }
+    };
+
+    btn_sum.setOnAction(sum);
+
+    Scene scene = new Scene(gp, 350, 350);
+    primarystage.setScene(scene);
+    primarystage.setTitle("Qno. 3a");
+    primarystage.show();
+
+  }
+
+  public static void main(String[] args) {
+    launch(args);
+  }
+}
