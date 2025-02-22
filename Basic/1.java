@@ -1,9 +1,8 @@
-//function of interface and implement..
-// Define an interface
+//function of interface and implementation
 interface MyInterface
  {
     void print(); // Abstract method
-    void interfaceFunction(); // Abstract method
+    void interfaceFunction(); 
 }
 
 // A class implementing the interface

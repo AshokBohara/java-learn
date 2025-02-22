@@ -1,3 +1,4 @@
+//example of override methods in java
 import java.util.Scanner;
 
 // Base class
