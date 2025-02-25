@@ -27,16 +27,21 @@ class Data
         }
     }
 
-    public void checkPalindrome() {
-        if (str == null) {
+    public void checkPalindrome() 
+  {
+        if (str == null) 
+        {
             System.out.println("No valid input received.");
             return;
         }
         
         String reversed = new StringBuilder(str).reverse().toString();
-        if (str.equalsIgnoreCase(reversed)) {
+        if (str.equalsIgnoreCase(reversed)) 
+        {
             System.out.println("The string is a palindrome.");
-        } else {
+        } 
+        else 
+        {
             System.out.println("The string is not a palindrome.");
         }
     }
