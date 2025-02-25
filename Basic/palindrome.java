@@ -2,21 +2,27 @@ import java.util.Scanner;
 
 class Palindrome
  {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+  {
         Data d = new Data();
         d.getData();
         d.checkPalindrome();
     }
 }
 
-class Data {
+class Data
+ {
     private String str;
 
-    public void getData() {
-        try (Scanner sc = new Scanner(System.in)) {
+    public void getData()
+  {
+        try (Scanner sc = new Scanner(System.in)) 
+        {
             System.out.print("Enter a string: ");
             str = sc.nextLine();
-        } catch (Exception e) {
+        }
+         catch (Exception e) 
+        {
             System.out.println("Error: " + e.getMessage());
         }
     }
