@@ -1,48 +1,48 @@
 //displaying the result of three subject in java..
 import java.util.*;
 
-class demo1 
+class demo1
 {
     public static void main(String[] args)
     {
-        Result r = new Result(); 
+        Result r = new Result();
         r.setDetail();
-        r.displayDetail(); 
+        r.displayDetail();
     }
 }
 
-class Result 
+class Result
 {
     private double s1, s2, s3;
     private int roll;
-    private String name; 
+    private String name;
 
-    public void setDetail() 
+    public void setDetail()
     {
-        Scanner sc = new Scanner(System.in); 
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter name:");
         name = sc.nextLine();
         System.out.println("Enter roll:");
-        roll = sc.nextInt(); 
+        roll = sc.nextInt();
         System.out.println("Enter marks in three subjects:");
         s1 = sc.nextDouble();
         s2 = sc.nextDouble();
         s3 = sc.nextDouble();
     }
 
-    public void displayDetail() 
+    public void displayDetail()
     {
         double total = s1 + s2 + s3;
         double pct = total / 3;
-        String div = ""; 
+        String div = "";
         
-        if (pct >= 80) 
+        if (pct >= 80)
         {
             div = "Distinction";
         } else if (pct >= 60)
-         { 
+         {
             div = "First Division";
-        } 
+        }
         else
          {
             div = "Second Division";
