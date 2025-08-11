@@ -21,23 +21,35 @@ class Calc {
         ch = r.nextInt();
 
         // Step 3: Perform calculation
-        if (ch == 1) {
+        if (ch == 1)
+        {
             cal = n1 + n2;
             System.out.println("Sum is: " + cal);
-        } else if (ch == 2) {
+        }
+        else if (ch == 2)
+        {
             cal = n1 - n2;
             System.out.println("Difference is: " + cal);
-        } else if (ch == 3) {
+        }
+        else if (ch == 3)
+        {
             cal = n1 * n2;
             System.out.println("Product is: " + cal);
-        } else if (ch == 4) {
-            if (n2 != 0) {
+        }
+        else if (ch == 4)
+        {
+            if (n2 != 0)
+            {
                 cal = n1 / n2;
                 System.out.println("Quotient is: " + cal);
-            } else {
+            }
+            else
+            {
                 System.out.println("Division by zero is not allowed");
             }
-        } else {
+        }
+        else
+        {
             System.out.println("Invalid operation selected");
         }
 
