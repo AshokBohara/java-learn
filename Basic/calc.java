@@ -1,5 +1,5 @@
+// Simple Calculator Program in Java
 import java.util.Scanner;
-
 class Calc {
     public static void main(String[] args) {
         int n1, n2, ch, cal;
